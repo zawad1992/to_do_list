@@ -1,0 +1,406 @@
+{
+	"info": {
+		"_postman_id": "98015f30-b443-465e-b5d9-53a38bb8ca99",
+		"name": "JAVA Spring Boot Todo",
+		"description": "Todo List Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25038743"
+	},
+	"item": [
+		{
+			"name": "Todo List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/todo-list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"todo-list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/todo-list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"todo-list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Jun 2023 15:29:12 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Buy groceries\",\n        \"description\": \"ZAWAD.\",\n        \"status\": false\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Buy groceries\",\n        \"description\": \"Go to the supermarket and buy the necessary items.\",\n        \"status\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Todo List by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/todo-list/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"todo-list",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Todo List Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/todo-list/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"todo-list",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Jun 2023 16:01:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"title\": \"Buy groceries\",\n    \"description\": \"Go to the supermarket and buy the necessary items.\",\n    \"status\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Todo Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"Go to the supermarket and buy the necessary items.\",\r\n  \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/todo-create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"todo-create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Todo List Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"Go to the supermarket and buy the necessary items.\",\r\n  \"status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/todo-create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"todo-create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Jun 2023 15:56:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 16,\n    \"title\": \"Buy groceries\",\n    \"description\": \"Go to the supermarket and buy the necessary items.\",\n    \"status\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Todo Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"ZAWAD.\",\r\n  \"status\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/todo-update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"todo-update",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Todo Create Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"ZAWAD.\",\r\n  \"status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/todo-update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"todo-update",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Jun 2023 15:18:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Todo updated"
+				}
+			]
+		},
+		{
+			"name": "Todo Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/todo-delete/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"todo-delete",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Todo Update Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/todo-delete/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"todo-delete",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Jun 2023 16:01:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Todo have been deleted"
+				}
+			]
+		}
+	]
+}
